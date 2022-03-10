@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="author" content="Guilherme Machado Dal Castel">
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+    <main>
+        <div id="form">
+            <h1>Calculadora de Temperatura</h1>
+            <div class="form-2">
+                <label for="temp">Insira a Temperatura</label>
+                <div class="form-3">
+                    <input id="temp" name="temperatura" autocomplete="off" type="number" placeholder="Insira a Temperatura" class="inputs">
+                    <select id="escala" name="escala" type="text" autocomplete="on" class="inputs">
+                        <option value="C">ºC</option>
+                        <option value="F">ºF</option>
+                        <option value="K">K</option>
+                        <option value="R">R</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-2">
+                <label for="tempDese">Resultado da Conversão</label>
+                <div class="form-3">
+                    <input id="tempDese" name="resultado" type="number" autocomplete="off" placeholder="Resultado da Conversão" class="inputs" readonly>
+                    <select id="escalaDese" name="escalaDese" type="text" autocomplete="n" class="inputs">
+                        <option value="C">ºC</option>
+                        <option value="F">ºF</option>
+                        <option value="K">K</option>
+                        <option value="R">R</option>
+                    </select>
+                </div>
+            </div>
+            <button id="button">CALCULAR</button>
+        </div>
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
